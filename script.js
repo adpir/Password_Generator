@@ -15,7 +15,7 @@ function generatePassword() {
     getuserchoice(passwordlenght)
   }
   else{
-    generatePassword()
+    return generatePassword()
   }
 }
 
@@ -46,6 +46,13 @@ function getuserchoice(passwordlenght){
     validcharacters =validcharacters + "abcdefghijklmnopqrstuvwxyz"
   }
   console.log (validcharacters)
+  let password=""
+  for (let i=0;i < passwordlenght;i++){
+    let arrindex = Math.floor(Math.random() * validcharacters.length)
+    password= password+validcharacters[arrindex]
+  }
+ console.log (password)
+ return password
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
