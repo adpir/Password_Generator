@@ -4,10 +4,7 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
+  
 }
 function generatePassword() {
   let passwordlenght =parseInt(prompt("Enter Passowrd length(8-120)"))
@@ -15,7 +12,7 @@ function generatePassword() {
     getuserchoice(passwordlenght)
   }
   else{
-    return generatePassword()
+    generatePassword()
   }
 }
 
@@ -27,7 +24,7 @@ function getuserchoice(passwordlenght){
   let yesnumber = false;
 
   while(!yeslower && !yesupper && !yesspecials && !yesnumber){
-      yesnumber = confirm("Do you want numbers?");
+      yesnumber = confirm("Please choose -Do you want numbers?");
       yesupper= confirm("Do you want upper letters?");
       yesspecials= confirm( "Do you want to included specials characters?");
       yeslower=confirm("do you want lower letters?");
@@ -52,7 +49,10 @@ function getuserchoice(passwordlenght){
     password= password+validcharacters[arrindex]
   }
  console.log (password)
- return password
+ var passwordText = document.querySelector("#password");
+
+ passwordText.value = password;
+
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
