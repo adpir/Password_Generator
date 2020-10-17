@@ -1,5 +1,5 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
+let generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
@@ -7,8 +7,8 @@ function writePassword() {
   
 }
 function generatePassword() {
-  let passwordlenght =parseInt(prompt("Enter Passowrd length(8-120)"))
-  if( passwordlenght > 7 && passwordlenght < 121){
+  let passwordlenght =parseInt(prompt("Enter Passowrd length(8-128)"))
+  if( passwordlenght > 8 && passwordlenght < 128){
     getuserchoice(passwordlenght)
   }
   else{
@@ -49,7 +49,7 @@ function getuserchoice(passwordlenght){
     password= password+validcharacters[arrindex]
   }
  console.log (password)
- var passwordText = document.querySelector("#password");
+ let passwordText = document.querySelector("#password");
 
  passwordText.value = password;
 

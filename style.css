@@ -13,8 +13,8 @@ body,
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
+  font-family:sans-serif;
+  background-color: #c6daed;
 }
 
 .wrapper {
@@ -31,11 +31,11 @@ header {
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsla(201, 38%, 60%, 0.929);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsl(205, 18%, 21%);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
