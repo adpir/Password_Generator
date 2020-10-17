@@ -5,7 +5,7 @@
 On this project, we need to create a secure password Generator for an employee to use. On this password Generator, we need to make sure that we used different unique characters such as upper and lower characters and numbers. 
 
 # Pasword Generator
-![image](./assets/password_generator.PNG)
+![image](./Assets/password_generator.png)
 
 # Installation
 The installation I used is:
